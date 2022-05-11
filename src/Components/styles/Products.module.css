@@ -1,0 +1,14 @@
+.container{
+    width: 250px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.container img {
+    width: inherit;
+    height: 250px;
+}

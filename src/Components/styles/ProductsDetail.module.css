@@ -1,0 +1,27 @@
+.container {
+    padding: 50px 25px;
+    margin: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid silver;
+    border-radius: 25px;
+    box-shadow: -10px 10px 18px gray;
+
+}
+.container img {
+    transform: scale(.5);
+}
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.detail a {
+    background-color: #232323;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+}

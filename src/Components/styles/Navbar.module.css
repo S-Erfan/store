@@ -1,0 +1,25 @@
+.container {
+    height: 80px;
+    background-color: #65dd;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    padding: 0 80px;
+    position: sticky;
+    top: 0;
+}
+.cartShop{
+    position: relative;
+}
+.cartShop span {
+    background-color: #f00;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+}
