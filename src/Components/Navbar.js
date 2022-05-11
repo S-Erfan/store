@@ -16,13 +16,15 @@ const Navbar = () => {
     const {state} = useContext(CartContext);
     console.log(state)
     return (
-        <header className={styles.container}>
-            <Link to='/products'>Products</Link>
-            <div className={styles.cartShop}>
-                <Link to='/cart'>
-                    <FontAwesomeIcon icon={faCartShopping} />
-                </Link>
-                <span>{state.itemCounter}</span>
+        <header className={styles.mainContainer}>
+            <div className={styles.container}>
+                <Link to='/products'>Products</Link>
+                <div className={styles.cartShop}>
+                    <Link to='/cart'>
+                        <FontAwesomeIcon icon={faCartShopping} />
+                    </Link>
+                    <span>{state.itemCounter}</span>
+                </div>
             </div>
         </header>
     );
