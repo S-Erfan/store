@@ -1,0 +1,98 @@
+.container {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:25px;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 8px #888 ;
+}
+.container img {
+    height: 80px;
+}
+.details{
+    text-align: center;
+}
+.details h3{
+    color: #711A75;
+    margin-bottom: 10px;
+}
+.details span {
+    background-color: #27aa2d;
+    color: #fff;
+    padding: 5px;
+    border-radius: 2px;
+}
+.quantity {
+    background-color: #F0A500;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 2px;
+}
+.containerBtn {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upOne, .DOne, .trash {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: #65d;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    font-weight: 700;
+}
+.trash {
+    font-size: 20px;
+}
+.upOne:hover, .DOne:hover, .trash:hover{
+    background-color: #68d;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 0;
+        border-radius: 5px;
+        padding: 0 10px 10px;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 8px #888 ;
+    }
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+    .details{
+        text-align: center;
+        margin: 25px 0;
+    }
+    .quantity {
+        margin: 0 0 25px;
+    }
+}
+@media (min-width: 481px) and (max-width: 950px) {
+    .container {
+        width: 100%;
+    }
+}

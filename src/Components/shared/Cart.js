@@ -3,8 +3,16 @@ import React, { useContext } from 'react';
 //functions
 import { shorted } from '../../helper/functions';
 
-//contect
+//context
 import { CartContext } from '../../Context/CartContextProvider';
+
+//stylesheet
+import styles from '../styles/Cart.module.css';
+
+//icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+
 
 const Cart = (props) => {
 
@@ -12,20 +20,20 @@ const Cart = (props) => {
     const { image, quantity, title, price } = props.data;
 
     return (
-        <div>
+        <div className={styles.container}>
             <img src={image} alt="product" />
-            <div>
+            <div className={styles.details}>
                 <h3>{shorted(title)}</h3>
-                <span>{price}</span>
+                <span>{price}$</span>
             </div>
-            <span>#{quantity}</span>
-            <div>
+            <span className={styles.quantity}>{quantity}</span>
+            <div className={styles.containerBtn}>
                 {
                     quantity > 1 ?
-                    <button onClick={()=> dispatch({type:"DECREASE", payload: props.data})} >-</button> :
-                    <button onClick={()=> dispatch({type:"REMOVE_ITEM", payload: props.data})}>remove</button>
+                    <button className={styles.DOne} onClick={()=> dispatch({type:"DECREASE", payload: props.data})} >-</button> :
+                    <button className={styles.trash} onClick={()=> dispatch({type:"REMOVE_ITEM", payload: props.data})}><FontAwesomeIcon icon={faTrash} /></button>
                 }
-                <button onClick={()=> dispatch({type:"INCREASE", payload: props.data})} >+</button>
+                <button className={styles.upOne} onClick={()=> dispatch({type:"INCREASE", payload: props.data})} >+</button>
             </div>
         </div>
     );
