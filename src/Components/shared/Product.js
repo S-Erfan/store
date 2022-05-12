@@ -34,6 +34,7 @@ const Product = ({productData}) => {
                         <button className={styles.upOne} onClick={()=> dispatch({type: 'INCREASE', payload: productData})} >+</button> :
                         <button className={styles.add} onClick={()=> dispatch({type: 'ADD_ITEM', payload: productData})} >Add to cart</button>
                     }
+                    {quantityCount(state, id) > 0 && <span className={styles.quntitySpan}>{quantityCount(state, id)}</span>}
                     {quantityCount(state, id) > 1 && <button className={styles.DOne} onClick={()=> dispatch({type: 'DECREASE', payload: productData})} >-</button>}
                     {quantityCount(state, id) === 1 && <button className={styles.trash} onClick={()=> dispatch({type: 'REMOVE_ITEM', payload: productData})}><FontAwesomeIcon icon={faTrash}/></button>}
                 </div>

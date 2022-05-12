@@ -43,7 +43,7 @@
 .detail p {
     margin-bottom: 20px;
 }
-.detail span {
+.detail .categoryS {
     font-weight: 800;
     color: #F0A500;
     margin-right: 5px;
@@ -54,7 +54,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.btn span {
+.btn .priceCont {
     background-color: #27aa2d;
     color: #fff;
     padding: 8px 12px;
@@ -103,7 +103,6 @@
 }
 
 .upOne, .trash, .DOne {
-    margin-left: 10px;
     width: 30px;
     height: 30px;
     border: none;
@@ -124,6 +123,13 @@
 }
 .trash {
     font-size: 20px;
+}
+.btnCart .quantitySpan{
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
 }
 
 @media (max-width: 780px) {

@@ -69,7 +69,6 @@
 }
 
 .upOne, .trash, .DOne {
-    margin-left: 10px;
     width: 30px;
     height: 30px;
     border: none;
@@ -90,4 +89,10 @@
 }
 .trash {
     font-size: 20px;
+}
+.quntitySpan {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
 }
