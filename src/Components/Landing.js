@@ -4,6 +4,8 @@ import React from 'react';
 import Baner from './shared/Baner';
 import TopPro from './shared/TopPro';
 import SearchBox from './SearchBox';
+import Logos from './Logos';
+import Footer from './Footer';
 
 const Landing = () => {
     return (
@@ -11,6 +13,8 @@ const Landing = () => {
             <Baner />
             <TopPro />
             <SearchBox />
+            <Logos />
+            <Footer />
         </div>
     );
 };

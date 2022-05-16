@@ -11,6 +11,8 @@ import ProductsDetail from "./Components/ProductsDetail";
 import Navbar from "./Components/Navbar";
 import CartShop from "./Components/CartShop";
 import Landing from "./Components/Landing";
+import Blogs from "./Components/Blogs";
+
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path='/products' element={<Store />} />
+            <Route path='/blogs' element={<Blogs />} />
             <Route path='/cart' element={<CartShop />} />
             <Route path='/products/:id' element={<ProductsDetail />} />
             <Route path='/' element={ <Landing />} />

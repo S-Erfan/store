@@ -7,4 +7,7 @@ const getProducts = async ()=> {
     return response.data;
 }
 
+const BLOG_URL = "https://api.freerealapi.com/blogs/6185a7b3b883dbaafa9448de";
+
+
 export { getProducts }

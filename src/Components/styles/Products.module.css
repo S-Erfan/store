@@ -63,10 +63,10 @@
 .add:hover {
     background-color: #68d;
 }
-.add:active {
+/* .add:active {
     transform: translateX(100%);
     opacity: 0;
-}
+} */
 
 .upOne, .trash, .DOne {
     width: 30px;

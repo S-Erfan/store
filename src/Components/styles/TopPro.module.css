@@ -9,3 +9,9 @@
     color: #711A75;
     margin-bottom: 10px;
 }
+
+.container .spinner {
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+}

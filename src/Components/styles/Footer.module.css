@@ -1,0 +1,11 @@
+.container {
+    height: 50px;
+    background-color: #65d;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.container p {
+    line-height: 50px;
+    color: #fff;
+    font-size: 1rem;
+}

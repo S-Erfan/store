@@ -14,7 +14,7 @@ const SearchBox = () => {
                 Search what you want
             </h1>
             <div className={styles.inputContainer}>
-                <input type='text' />
+                <input type='text' placeholder='Search...' />
                 <FontAwesomeIcon icon={faSearch} /> 
             </div>
         </div>
