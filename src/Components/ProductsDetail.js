@@ -15,6 +15,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleLeft, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 
+
 const ProductsDetail = () => {
 
     const params = useParams();
@@ -25,8 +26,7 @@ const ProductsDetail = () => {
 
     const {state, dispatch} = useContext(CartContext);
 
-    console.log(state)
-    console.log(quantityCount(state, targetProduct.id ) > 1)
+
     return (
         <div className={styles.container}>
             <div className={styles.containerImg}>

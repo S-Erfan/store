@@ -1,0 +1,14 @@
+.humbergurActive div:nth-child(1) {
+    transform: rotateZ(45deg);
+}
+.humbergurActive div:nth-child(2) {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.humbergurActive div:nth-child(3) {
+    transform: rotateZ(-45deg);
+}
+
+.showMenu {
+    transform: translateX(0) !important;
+}

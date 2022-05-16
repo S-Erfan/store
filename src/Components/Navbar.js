@@ -1,8 +1,9 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 //stylesheet
 import styles from './styles/Navbar.module.css';
+import './styles/NavbarResponsive.css'
 
 //icons 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,12 +14,34 @@ import { CartContext } from '../Context/CartContextProvider';
 
 const Navbar = () => {
 
+    const humbergurMenu = useRef()
+    const textMenu = useRef()
+
     const {state} = useContext(CartContext);
-    console.log(state)
+    
+    const humbergurHandler = () => {
+        console.log(humbergurMenu.current);
+        humbergurMenu.current.classList.toggle("humbergurActive");
+        textMenu.current.classList.toggle("showMenu");
+
+
+    }
+
     return (
         <header className={styles.mainContainer}>
             <div className={styles.container}>
-                <Link to='/products'>Products</Link>
+                <ul ref={textMenu}>
+                    <li><Link to='/' >Home</Link></li>
+                    <li><Link to='/products'>Products</Link></li>
+                    <li><Link to='/products'>Blogs</Link></li>
+                    <li><Link to='/products'>About Us</Link></li>
+                    <li><Link to='/products'>Contact Us</Link></li>
+                </ul>
+                <div className={styles.humbergur} ref={humbergurMenu} onClick={humbergurHandler}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <div className={styles.cartShop}>
                     <Link to='/cart'>
                         <FontAwesomeIcon icon={faCartShopping} />
