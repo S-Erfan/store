@@ -5,7 +5,7 @@
 .mainContainer {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content:flex-start;
     align-items: center;
     margin: 25px 45px ;
     border: 2px solid #606060;
