@@ -12,7 +12,7 @@ import styles from './styles/ContactUs.module.css';
 const ContactUs = () => {
     return (
         <div className={styles.mainContainer}> 
-            <div className={styles.info}>
+            <div className={styles.info}>   
                 <div className={styles.infoDetail}>
                     <h2>Contact info</h2>
                     <div>

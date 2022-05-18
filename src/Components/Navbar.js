@@ -20,7 +20,6 @@ const Navbar = () => {
     const {state} = useContext(CartContext);
     
     const humbergurHandler = () => {
-        console.log(humbergurMenu.current);
         humbergurMenu.current.classList.toggle("humbergurActive");
         textMenu.current.classList.toggle("showMenu");
 

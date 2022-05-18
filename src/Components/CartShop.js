@@ -14,7 +14,6 @@ import styles from './styles/CartShop.module.css';
 const CartShop = () => {
 
     const { state, dispatch } = useContext(CartContext);
-    console.log(state)
 
     return (
         <div className={styles.container}>

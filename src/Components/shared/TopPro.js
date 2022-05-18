@@ -25,7 +25,6 @@ const TopPro = () => {
 
     const products = useContext(ProductsContext);
     const TopProducts = products.filter(item => item.rating.rate >= 4); 
-    console.log(TopProducts)
 
     return (
       <div className={styles.container}>

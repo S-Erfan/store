@@ -12,12 +12,12 @@ import styles from './styles/Store.module.css';
 
 const Store = () => {
 
-    const products = useContext(ProductsContext)
+    const products = useContext(ProductsContext);       
 
     return (
         <div className={styles.container}>
             {
-            products.map(item => <Product key={item.id} productData={item} />)
+            products.length ?  products.map(item => <Product key={item.id} productData={item} />) : <h1>Loading...</h1>
             }
         </div>
     );
