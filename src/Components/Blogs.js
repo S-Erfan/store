@@ -3,8 +3,6 @@ import React, { useEffect, useState } from 'react';
 //stylesheet
 import styles from './styles/Blogs.module.css';
 
-//function
-import { getBlog } from '../service/api';
 
 //components
 import Baner from './shared/Baner';
@@ -15,23 +13,25 @@ import Blog from './shared/Blog';
 const Blogs = () => {
 
     const [blog, setBlog] = useState([]);
+    const [show, setShow] = useState(false);
 
     useEffect(()=> {
         axios.get("https://api.freerealapi.com/blogs/6185a7b3b883dbaafa9448de")
-            .then(res => setBlog(res.data.blog));
-        
+            .then(res => {
+                setBlog(res.data.blog);
+                setShow(true)
+            });
     }, [])
 
     return (
         <div className={styles.mainContainer}>
             <Baner />
             {
-                blog &&
-                <Blog data={blog} />
+                show ?
+                <Blog data={blog} tags={blog.tags} />
+                : <h2>loading...</h2>
             }
-                <button onClick={()=> console.log(blog.tags[2])}>
-                    click here
-                </button>
+
         </div>
     );
 };

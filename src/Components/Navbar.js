@@ -34,7 +34,7 @@ const Navbar = () => {
                     <li><Link to='/' >Home</Link></li>
                     <li><Link to='/products'>Products</Link></li>
                     <li><Link to='/blogs'>Blogs</Link></li>
-                    <li><Link to='/products'>Contact Us</Link></li>
+                    <li><Link to='/contact'>Contact Us</Link></li>
                 </ul>
                 <div className={styles.humbergur} ref={humbergurMenu} onClick={humbergurHandler}>
                     <div></div>

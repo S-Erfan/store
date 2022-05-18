@@ -1,0 +1,295 @@
+:root {
+    --font-info: 1.5rem;
+    --icon-size: 2.5rem;
+}
+.mainContainer {
+    margin: 150px auto;
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.info {
+    background-color: #65d;
+    color: #fff;
+    width: 400px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    font-size: var(--font-info);
+    border-radius: 25px;
+    z-index: 5;
+    box-shadow: 12px 15px 18px #323232;
+    position: absolute;
+    left: 20px;
+}
+.infoDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.infoDetail div {
+    margin: 20px 0;
+}
+.infoDetail svg {
+    margin: 0 15px;
+}
+.logoContact {
+    font-size: var(--icon-size);
+}
+.logoContact svg {
+    margin: 0 15px;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+.logoContact svg:hover {
+    transform: translateY(-10px);
+}
+.form {
+    background-color: #F0A500;
+    width: 80%;
+    height: 100%;
+    padding: 80px 30px 80px 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: var(--font-info);
+    border-radius: 25px;
+    box-shadow: 25px 40px 80px #3232326e;
+}
+.getUser {
+    width: 100%;
+}
+.inputFild {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.inputFild input {
+    font-size: var(--font-info);
+    width: 48%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid #323232;
+    padding: 5px 10px;
+    font-weight: 700;
+}
+.inputFild input::placeholder{
+    color: #65d;
+}
+.writing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.writing textarea{
+    resize: none;
+    width: 100%;
+    height: 120px;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 40px 0 10px;
+    border-bottom: 2px solid #323232;
+    font-size: var(--font-info);
+}
+.writing textarea::placeholder{
+    color: #65d;
+}
+
+.btn {
+    box-sizing: unset;
+    font-size: var(--font-info);
+    padding: 10px 40px;
+    background: #65d;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    box-shadow: 1px 3px 8px #4d4d4d;
+}
+.btn:hover {
+    background-color: #442ed2;
+    transform: translateY(-5px);
+    box-shadow: 1px 6px 8px #2a2929;
+}
+
+@media (max-width: 490px) {
+    :root {
+        --font-info: .8rem;
+        --icon-size: 1.5rem;
+    }
+    .mainContainer {
+        margin: 100px auto 200px;
+        height: auto;
+        width: 80vw;
+        flex-direction: column;
+        position: relative;
+        
+    }
+    .info {
+        width: 100%;
+        height: 360px;
+        display: flex;
+        padding: 30px 20px;
+        font-size: var(--font-info);
+        box-shadow: 12px 15px 18px #323232;
+        position: unset;
+        margin-bottom: 60px;
+    }
+    .form {
+        background-color: #F0A500;
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: var(--font-info);
+        border-radius: 25px;
+        box-shadow: 12px 15px 18px #323232;
+    }
+    .inputFild {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .inputFild input {
+        width: 80%;
+        height: 50px;
+        margin-bottom: 25px;
+    }
+    .writing {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 491px) and (max-width: 985px) {
+    :root {
+        --font-info: 1.2rem;
+        --icon-size: 1.9rem;
+    }
+    .mainContainer {
+        margin: 100px auto 200px;
+        height: auto;
+        width: 80vw;
+        flex-direction: column;
+        position: relative;
+        
+    }
+    .info {
+        width: 100%;
+        height: 360px;
+        display: flex;
+        padding: 30px 20px;
+        font-size: var(--font-info);
+        box-shadow: 12px 15px 18px #323232;
+        position: unset;
+        margin-bottom: 60px;
+    }
+    .form {
+        background-color: #F0A500;
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: var(--font-info);
+        border-radius: 25px;
+        box-shadow: 12px 15px 18px #323232;
+    }
+    .inputFild {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .inputFild input {
+        width: 80%;
+        height: 50px;
+        margin-bottom: 25px;
+    }
+    .writing {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (min-width: 986px) and (max-width: 1200px) {
+    .mainContainer {
+        margin: 150px auto;
+        height: 80vh;
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .form {
+        background-color: #F0A500;
+        width: 90%;
+        height: 100%;
+        padding: 80px 30px 80px 330px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: var(--font-info);
+        border-radius: 25px;
+        box-shadow: 25px 40px 80px #3232326e;
+    }
+    .info {
+        background-color: #65d;
+        color: #fff;
+        width: 400px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 20px;
+        font-size: var(--font-info);
+        border-radius: 25px;
+        z-index: 5;
+        box-shadow: 12px 15px 18px #323232;
+        position: absolute;
+        left: -10px;
+    }
+    .inputFild {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .inputFild input {
+        width: 80%;
+        height: 50px;
+        margin-bottom: 25px;
+    }
+    .writing {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-left: 50px;
+    }
+    .btn {
+        margin-left: 50px;
+    }
+}
