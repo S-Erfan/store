@@ -16,10 +16,13 @@ import Footer from "./Components/Footer";
 import ContactUs from "./Components/ContactUs";
 
 
+//style
+import './App.css'
+
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <ContextProducts>
         <CartContextProvider>
           <Navbar />
