@@ -14,7 +14,8 @@ import Landing from "./Components/Landing";
 import Blogs from "./Components/Blogs";
 import Footer from "./Components/Footer";
 import ContactUs from "./Components/ContactUs";
-
+import SignUp from './Components/Account/SignUp';
+import LogIn from "./Components/Account/LogIn";
 
 //style
 import './App.css'
@@ -27,6 +28,8 @@ function App() {
         <CartContextProvider>
           <Navbar />
           <Routes>
+            <Route path='/log-in' element={<LogIn />} />
+            <Route path='/sign-up' element={<SignUp />} />
             <Route path='/products' element={<Store />} />
             <Route path='/contact' element={<ContactUs />} />
             <Route path='/blogs' element={<Blogs />} />

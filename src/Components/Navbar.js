@@ -7,7 +7,7 @@ import './styles/NavbarResponsive.css'
 
 //icons 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping, faUser } from '@fortawesome/free-solid-svg-icons';
 
 //context
 import { CartContext } from '../Context/CartContextProvider';
@@ -42,6 +42,9 @@ const Navbar = () => {
                     <div></div>
                 </div>
                 <div className={styles.cartShop}>
+                    <Link to='/sign-up'>
+                        <FontAwesomeIcon icon={faUser} />
+                    </Link>
                     <Link to='/cart'>
                         <FontAwesomeIcon icon={faCartShopping} />
                     </Link>
